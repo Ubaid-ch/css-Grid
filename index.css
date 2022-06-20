@@ -55,7 +55,19 @@
 
 /* css gradient */
 .container{
+    padding:50px;
     display:grid;
-    grid-template-columns:100px auto 100px;
+    /* grid-template-columns:100px auto 100px; #method1
+    grid-template-rows:50px 50px; */
+     
+    /* grid-template-columns:1fr 2fr 1fr;      #mehod2
     grid-template-rows:50px 50px;
+      */
+
+    /* grid-template-columns:repeat(3, 1fr);  #method3
+    grid-template-rows:repeat(2, 50px); */
+
+    grid-template:repeat(2, 50px) / repeat(3, 1fr);
+     
+    grid-gap:5px;
 }
